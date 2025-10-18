@@ -1,0 +1,9 @@
+{
+  "name": "Wujood Care - VR Medical Training Solutions",
+  "short_name": "Wujood Care",
+  "description": "Virtual Reality Medical Training & Healthcare Solutions. Your Presence, Our Care.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#563293",
+  "theme_color": "#563293"
+}
