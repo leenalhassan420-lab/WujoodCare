@@ -129,13 +129,13 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 scroll-smooth;
+    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
 
-  /* Added custom animations for floating cloud elements */
+  /* Enhanced custom animations for floating cloud elements and added glow effect */
   @keyframes float {
     0%,
     100% {
@@ -156,11 +156,25 @@
     }
   }
 
+  @keyframes glow {
+    0%,
+    100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
   .animate-float {
     animation: float 8s ease-in-out infinite;
   }
 
   .animate-float-delayed {
     animation: float-delayed 10s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
   }
 }
