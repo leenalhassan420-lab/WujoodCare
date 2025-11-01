@@ -67,7 +67,7 @@ export function ProductSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative bg-muted rounded-2xl aspect-[4/3] overflow-hidden">
               <Image
-                src="/vr-medical-training-interface-with-3d-anatomy-visu.jpg"
+                src="./vr-medical-training-interface-with-3d-anatomy-visu.jpg"
                 alt="VR Medical Training Platform"
                 className="w-full h-full object-cover"
                 fill

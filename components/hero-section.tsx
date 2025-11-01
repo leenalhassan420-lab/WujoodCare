@@ -93,7 +93,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative bg-muted rounded-2xl aspect-square overflow-hidden">
               <Image
-                src="/medical-professional-using-vr-headset-in-modern-he.jpg"
+                src="./medical-professional-using-vr-headset-in-modern-he.jpg"
                 alt="VR Medical Technology"
                 className="w-full h-full object-cover"
                 fill
