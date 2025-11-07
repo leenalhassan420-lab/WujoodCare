@@ -1,16 +1,11 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Baloo_2, Rubik } from "next/font/google";
+import { Baloo_2 } from "next/font/google";
 import "./globals.css";
 
 const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo2",
-});
-
-const rubik = Rubik({
-  subsets: ["latin"],
-  variable: "--font-rubik",
 });
 
 export const metadata: Metadata = {
@@ -74,10 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${rubik.className} font-sans antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={baloo2.variable}>
+      <body className={`font-sans antialiased`}>{children}</body>
     </html>
   );
 }

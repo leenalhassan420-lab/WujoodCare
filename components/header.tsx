@@ -1,125 +1,100 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false);
-    }
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="top-0 right-0 left-0 z-50 fixed bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="mx-auto px-4 lg:px-8 container">
-        <div className="flex justify-between items-center h-16 lg:h-20">
-          <div className="flex items-center gap-3">
-            <div className="relative flex justify-center items-center bg-primary rounded-2xl w-10 h-10 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary" />
-              <span className="relative font-bold text-primary-foreground text-lg">
-                W
-              </span>
+    <header className="top-0 z-50 sticky bg-white shadow-md">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <div className="flex justify-center items-center bg-gradient-to-br from-[#563293] to-[#c060a5] rounded-full w-10 h-10">
+              <span className="font-bold text-white text-lg">W</span>
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-extrabold text-foreground text-xl leading-none">
-                Wujood Care
-              </span>
-              <span className="mt-0.5 text-[10px] text-muted-foreground leading-none">
-                Your Presence, Our Care
-              </span>
-            </div>
-          </div>
+            <span className="font-bold text-[#563293] text-xl">
+              Wujood Care
+            </span>
+          </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection("hero")}
-              className="font-medium text-muted-foreground hover:text-foreground text-sm transition-colors"
+          {/* Navigation */}
+          <nav className="hidden md:flex gap-8">
+            <Link
+              href="#hero"
+              className="text-gray-700 hover:text-[#563293] transition"
             >
               Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="font-medium text-muted-foreground hover:text-foreground text-sm transition-colors"
+            </Link>
+            <Link
+              href="#about"
+              className="text-gray-700 hover:text-[#563293] transition"
             >
-              About Us
-            </button>
-            <button
-              onClick={() => scrollToSection("product")}
-              className="font-medium text-muted-foreground hover:text-foreground text-sm transition-colors"
+              About
+            </Link>
+            <Link
+              href="#products"
+              className="text-gray-700 hover:text-[#563293] transition"
             >
-              Services
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="font-medium text-muted-foreground hover:text-foreground text-sm transition-colors"
+              Products
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-700 hover:text-[#563293] transition"
             >
               Contact
-            </button>
-          </div>
+            </Link>
+          </nav>
 
-          <div className="hidden md:block">
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="bg-primary hover:bg-primary/90 font-medium text-primary-foreground"
-            >
-              Get Started
-            </Button>
-          </div>
+          {/* CTA Button */}
+          <button className="hidden md:block bg-gradient-to-r from-[#f9f081] to-[#c060a5] hover:shadow-lg px-6 py-2 rounded-full font-bold text-[#563293] transition">
+            Get Started
+          </button>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-4">
-              <button
-                onClick={() => scrollToSection("hero")}
-                className="py-2 font-medium text-muted-foreground hover:text-foreground text-sm text-left transition-colors"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="py-2 font-medium text-muted-foreground hover:text-foreground text-sm text-left transition-colors"
-              >
-                About Us
-              </button>
-              <button
-                onClick={() => scrollToSection("product")}
-                className="py-2 font-medium text-muted-foreground hover:text-foreground text-sm text-left transition-colors"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="py-2 font-medium text-muted-foreground hover:text-foreground text-sm text-left transition-colors"
-              >
-                Contact
-              </button>
-              <Button
-                onClick={() => scrollToSection("contact")}
-                className="bg-primary hover:bg-primary/90 w-full text-primary-foreground"
-              >
-                Get Started
-              </Button>
-            </div>
-          </div>
+        {/* Mobile Menu */}
+        {isOpen && (
+          <nav className="md:hidden flex flex-col gap-2 pb-4">
+            <Link href="#home" className="text-gray-700 hover:text-[#563293]">
+              Home
+            </Link>
+            <Link href="#about" className="text-gray-700 hover:text-[#563293]">
+              About
+            </Link>
+            <Link
+              href="#products"
+              className="text-gray-700 hover:text-[#563293]"
+            >
+              Products
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-700 hover:text-[#563293]"
+            >
+              Contact
+            </Link>
+          </nav>
         )}
-      </nav>
+      </div>
     </header>
   );
 }
