@@ -1,8 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-
 export function HeroSection() {
   return (
     <section
@@ -12,7 +7,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/wujood.jpg')",
+          backgroundImage: "url('./wujood.jpg')",
           backgroundAttachment: "fixed",
         }}
       />
