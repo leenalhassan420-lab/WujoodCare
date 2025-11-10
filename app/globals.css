@@ -138,14 +138,14 @@ body {
     @apply bg-background text-foreground;
   }
 
-  /* h1,
+  h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-baloo;
-  } */
+    @apply font-serif;
+  }
 
   /* Enhanced custom animations for floating cloud elements and added glow effect */
   @keyframes float {

@@ -5,7 +5,7 @@ export function HeroSection() {
       className="relative flex items-center min-h-screen overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center"
         style={{
           backgroundImage: "url('./wujood.jpg')",
           backgroundAttachment: "fixed",

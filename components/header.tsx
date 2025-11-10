@@ -49,9 +49,11 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <button className="hidden md:block bg-gradient-to-r from-[#f9f081] to-[#c060a5] hover:shadow-lg px-6 py-2 rounded-full font-bold text-[#563293] transition">
-            Get Started
-          </button>
+          <Link href={"#contact"}>
+            <button className="hidden md:block bg-gradient-to-r from-[#f9f081] to-[#c060a5] hover:shadow-lg px-6 py-2 rounded-full font-bold text-[#563293] transition">
+              Get Started
+            </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>

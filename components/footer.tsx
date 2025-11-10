@@ -26,17 +26,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-card border-border border-t">
       <div className="mx-auto px-4 lg:px-8 py-12 lg:py-16 container">
         <div className="gap-8 grid sm:grid-cols-2 lg:grid-cols-6 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative flex justify-center items-center bg-primary rounded-2xl w-10 h-10 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary" />
-                <span className="relative font-bold text-primary-foreground text-lg">
-                  W
-                </span>
-              </div>
               <div className="flex flex-col">
                 <span className="font-serif font-extrabold text-card-foreground text-xl leading-none">
                   Wujood Care
@@ -114,7 +108,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border">
+        <div className="pt-8 border-border border-t">
           <div className="flex sm:flex-row flex-col justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
               © {currentYear} Wujood Care. All rights reserved.
