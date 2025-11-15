@@ -5,33 +5,33 @@ export function AboutSection() {
   const values = [
     {
       icon: Heart,
-      title: "Patient-Centered Care",
+      title: "Child-Centered Calm",
       description:
-        "Our VR solutions prioritize patient comfort and outcomes, creating compassionate healthcare experiences.",
+        "Every experience is designed around how children actually feel in the hospital - scared, bored, overwhelmed - and helps them find comfort and control.",
       color: "bg-[#c060a5]",
       lightBg: "bg-[#c060a5]/10",
     },
     {
       icon: Users,
-      title: "Collaborative Innovation",
+      title: "Clinically Co-Designed",
       description:
-        "Working alongside healthcare professionals to develop practical, effective training solutions.",
+        "Built in collaboration with pediatric oncology, anesthesia, and rehabilitation teams to align with real care pathways and procedures.",
       color: "bg-[#4eb2d0]",
       lightBg: "bg-[#4eb2d0]/10",
     },
     {
       icon: Award,
-      title: "Clinical Excellence",
+      title: "Evidence-Informed Design",
       description:
-        "Backed by research and validated by leading medical institutions worldwide.",
+        "Grounded in research on pain perception, anxiety reduction, and sensory regulation to support better emotional and physiological outcomes.",
       color: "bg-[#f9f081]",
       lightBg: "bg-[#f9f081]/15",
     },
     {
       icon: Zap,
-      title: "Cutting-Edge Technology",
+      title: "Adaptive, Gentle Technology",
       description:
-        "Leveraging the latest VR advancements to deliver unparalleled medical training experiences.",
+        "AI adjusts the world's pace, light, sound, and guidance based on each child's stress and engagement level.",
       color: "bg-[#563293]",
       lightBg: "bg-[#563293]/10",
     },
@@ -55,23 +55,41 @@ export function AboutSection() {
             </div>
 
             <h2 className="font-serif font-extrabold text-foreground text-3xl lg:text-5xl text-balance leading-tight">
-              Pioneering the{" "}
-              <span className="text-[#c060a5]">Future of Medical</span>{" "}
-              Education
+              Reimagining{" "}
+              <span className="text-[#c060a5]">Healing for Children</span> in
+              Hospitals
             </h2>
 
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Founded by healthcare professionals and technology innovators,
-              we&apos;re on a mission to revolutionize medical training through
-              immersive virtual reality experiences.
+            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+              Wujood Care develops AI-driven therapeutic VR environments
+              tailored specifically for pediatric oncology patients.
             </p>
 
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Our platform combines cutting-edge VR technology with
-              evidence-based medical practices, enabling healthcare
-              professionals to train in realistic, risk-free environments. From
-              surgical simulations to patient interaction scenarios, we&apos;re
-              transforming how medicine is taught and practiced.
+            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+              Our approach is grounded in deep personalization, each virtual
+              world is generated uniquely for every child, adapting in real time
+              to their emotional cues, behavioral responses, and clinical
+              context. By supporting emotional regulation during difficult
+              moments.
+            </p>
+
+            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+              Co-developed with clinicians and childhood cancer survivors,
+              Wujood integrates AI-based emotional profiling, procedural world
+              generation, and moment-to-moment responsiveness to create
+              soothing, supportive environments during chemotherapy,
+              radiotherapy, infusion sessions, and long-term care. This blend of
+              emotional comfort and physiological calming can help improve
+              procedure tolerance and reduce the need for breaks, sedation, or
+              repeat attempts.
+            </p>
+
+            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+              With three pediatric oncology centers already engaged and our
+              first clinical pilot launching in 2026, we are building a
+              scalable, evidence-informed platform designed to reduce
+              treatment-related anxiety and enhance both emotional well-being and
+              physical ease throughout the care journey.
             </p>
 
             <div className="flex items-center gap-4 pt-4">
@@ -86,7 +104,7 @@ export function AboutSection() {
                 ))}
               </div>
               <div className="text-muted-foreground text-sm">
-                Trusted by leading medical institutions globally
+                Co-created with clinicians, families, and researchers
               </div>
             </div>
           </div>
@@ -107,7 +125,7 @@ export function AboutSection() {
                 <h3 className="mb-2 font-serif font-bold text-card-foreground text-lg">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                   {value.description}
                 </p>
               </Card>

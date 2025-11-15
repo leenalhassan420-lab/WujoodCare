@@ -38,7 +38,7 @@ export function Header() {
               href="#products"
               className="text-gray-700 hover:text-[#563293] transition"
             >
-              Products
+              Value
             </Link>
             <Link
               href="#contact"
@@ -86,7 +86,7 @@ export function Header() {
               href="#products"
               className="text-gray-700 hover:text-[#563293]"
             >
-              Products
+              Value
             </Link>
             <Link
               href="#contact"

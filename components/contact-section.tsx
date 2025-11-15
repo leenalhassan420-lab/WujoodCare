@@ -8,19 +8,19 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@vrmedtech.com",
-      link: "mailto:contact@vrmedtech.com",
+      value: "wujoodcare@gmail.com",
+      link: "mailto:wujoodcare@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "00962796733980",
+      link: "tel:00962796733980",
     },
     {
       icon: MapPin,
       title: "Office",
-      value: "123 Innovation Drive, San Francisco, CA 94105",
+      value: "Remote-first, partnering with hospitals and clinics worldwide",
       link: "#",
     },
   ];
@@ -35,11 +35,13 @@ export function ContactSection() {
             </span>
           </div>
           <h2 className="mb-6 font-bold text-foreground text-3xl lg:text-5xl text-balance">
-            Ready to Transform Your Medical Training?
+            Ready to Bring Wujood to Your Patients?
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Contact us today to schedule a demo and discover how our VR
-            solutions can revolutionize your healthcare education programs.
+          <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+            Partner with us to introduce Wujood in your hospital or clinic and
+            help children experience treatment with more calm, trust, and
+            emotional safety. Schedule a demo to explore our therapeutic
+            worlds, workflows, and integration options for your care team.
           </p>
         </div>
 

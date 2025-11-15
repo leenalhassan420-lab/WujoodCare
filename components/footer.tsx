@@ -3,21 +3,6 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
-    product: [
-      { label: "Features", href: "#" },
-      { label: "Pricing", href: "#" },
-      { label: "Case Studies", href: "#" },
-      { label: "Demo", href: "#" },
-    ],
-    company: [{ label: "About Us", href: "#about" }],
-
-    legal: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-    ],
-  };
-
   const socialLinks = [
     { icon: FaFacebook, href: "#", label: "Facebook" },
     { icon: FaTwitter, href: "#", label: "Twitter" },
@@ -40,10 +25,11 @@ export function Footer() {
                 </span>
               </div>
             </div>
-            <p className="mb-6 text-muted-foreground text-sm leading-relaxed">
-              Transforming healthcare education through innovative virtual
-              reality solutions. Empowering the next generation of medical
-              professionals with warmth and compassion.
+            <p className="mb-6 text-muted-foreground text-sm leading-relaxed text-justify">
+              Wujood blends science, storytelling, and sensory design to create
+              VR worlds that soothe, empower, and support children through
+              treatment. We help care teams make emotional well-being a core
+              part of medicine - not an afterthought.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
@@ -60,50 +46,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 font-semibold text-card-foreground">Product</h3>
-            <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary text-sm transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <h3 className="mb-4 font-semibold text-card-foreground">Company</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary text-sm transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-semibold text-card-foreground">Legal</h3>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary text-sm transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="#about"
+                  className="text-muted-foreground hover:text-primary text-sm transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -111,10 +63,10 @@ export function Footer() {
         <div className="pt-8 border-border border-t">
           <div className="flex sm:flex-row flex-col justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Wujood Care. All rights reserved.
+              © 2025 Wujood Care. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm">
-              Designed for healthcare professionals worldwide
+              Designed for children, families, and care teams worldwide
             </p>
           </div>
         </div>
