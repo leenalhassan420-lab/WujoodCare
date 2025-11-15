@@ -4,14 +4,24 @@ export function HeroSection() {
       id="hero"
       className="relative flex items-center min-h-screen overflow-hidden"
     >
-      <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-center"
-        style={{
-          backgroundImage: "url('./wujood.jpg')",
-          backgroundAttachment: "fixed",
-        }}
-      />
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        onLoadedMetadata={(e) => e.currentTarget.play()} 
+        poster="wujood.jpg"   // relative path for GitHub Pages
+      >
+        <source 
+          src="VideoWujood.mp4"   // relative path for GitHub Pages
+          type="video/mp4" 
+        />
+      </video>
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
@@ -22,8 +32,7 @@ export function HeroSection() {
           </h1>
 
           <p className="drop-shadow-md mb-8 font-light text-white text-xl md:text-2xl">
-            Your Presence, Our Care - Revolutionary VR medical training
-            solutions
+            Where calm, play, and presence support children through treatment
           </p>
 
           <div className="flex sm:flex-row flex-col gap-4">
@@ -37,17 +46,19 @@ export function HeroSection() {
 
           {/* Stats */}
           <div className="gap-4 grid grid-cols-3 mt-12 max-w-md">
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg">
-              <p className="font-bold text-[#f9f081] text-3xl">500+</p>
-              <p className="text-white text-sm">Hospitals</p>
+            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+              <p className="font-bold text-[#f9f081] text-3xl">3</p>
+              <p className="text-white text-xl">Oncology centers</p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg">
-              <p className="font-bold text-[#4eb2d0] text-3xl">10K+</p>
-              <p className="text-white text-sm">Practitioners</p>
+
+            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+              <p className="font-bold text-[#4eb2d0] text-2xl">Co-Developed</p>
+              <p className="text-white text-lg">With Survivors</p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg">
-              <p className="font-bold text-[#c060a5] text-3xl">99%</p>
-              <p className="text-white text-sm">Success Rate</p>
+
+            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+              <p className="font-bold text-[#c060a5] text-3xl">Pilot Phase</p>
+              <p className="text-white text-sm">Launching in 2026</p>
             </div>
           </div>
         </div>

@@ -10,20 +10,20 @@ const baloo2 = Baloo_2({
 
 export const metadata: Metadata = {
   title:
-    "Wujood Care | Virtual Reality Medical Training & Healthcare Solutions",
+    "Wujood Care | Calming Virtual Reality for Pediatric Care Teams",
   description:
-    "Wujood Care delivers innovative VR medical training solutions that transform healthcare education. Experience virtual joy that heals with our cutting-edge medical simulation technology. Your Presence, Our Care.",
+    "Wujood Care is an AI-enhanced virtual reality platform that surrounds hospitalized children with adaptive, soothing worlds so they can face treatment with more calm, curiosity, and control.",
   keywords: [
-    "VR medical training",
-    "virtual reality healthcare",
-    "medical simulation",
-    "healthcare VR solutions",
-    "medical education technology",
-    "VR therapy",
-    "medical training software",
-    "healthcare innovation",
+    "pediatric virtual reality",
+    "child life support",
+    "hospital calming VR",
+    "pain management for kids",
+    "VR for medical procedures",
+    "pediatric anxiety reduction",
+    "therapeutic VR experiences",
+    "child-friendly healthcare tech",
     "Wujood Care",
-    "virtual medical training",
+    "virtual comfort for patients",
   ],
   authors: [{ name: "Raed Shafeek" }, { name: "Wujood Care" }],
   creator: "Raed Shafeek",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://wujoodcare.com",
     title:
-      "Wujood Care | Virtual Reality Medical Training & Healthcare Solutions",
+      "Wujood Care | Calming Virtual Reality for Pediatric Care Teams",
     description:
-      "Transform healthcare education with Wujood Care's innovative VR medical training solutions. Virtual joy that heals. Your Presence, Our Care.",
+      "Where calm, play, and presence support children through every procedure. Partner with Wujood Care to bring adaptive VR comfort to your patients and care teams.",
     siteName: "Wujood Care",
     images: [
       {

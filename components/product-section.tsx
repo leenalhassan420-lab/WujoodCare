@@ -15,32 +15,32 @@ export function ProductSection() {
 
   const modules = [
     {
-      title: "Surgical Training",
+      title: "Calm During Procedures",
       description:
-        "Master complex surgical procedures in a risk-free virtual environment",
-      color: "from-[#563293] to-[#c060a5]",
-      icon: "🏥",
+        "Nature-based, responsive environments that gently redirect attention away from needles, infusions, dressings, and other stressful procedures.",
+      bgClass: "bg-[#563293]",
+      icon: "",
     },
     {
-      title: "Diagnostic Imaging",
+      title: "Scan & Imaging Journeys",
       description:
-        "Learn advanced imaging interpretation techniques with real patient data",
-      color: "from-[#4eb2d0] to-[#563293]",
-      icon: "🔍",
+        "VR preparation paths that familiarize children with MRI, CT, and other imaging - reducing anxiety, improving cooperation, and supporting smoother scans.",
+      bgClass: "bg-[#4eb2d0]",
+      icon: "",
     },
     {
-      title: "Patient Care Simulation",
+      title: "Bedside Recovery & Resilience",
       description:
-        "Practice patient interaction and care protocols in realistic scenarios",
-      color: "from-[#c060a5] to-[#4eb2d0]",
-      icon: "👥",
+        "Comforting companions, light interaction, and guided breathing exercises that support long hospital stays, rehabilitation, and chronic treatment cycles.",
+      bgClass: "bg-[#c060a5]",
+      icon: "",
     },
     {
-      title: "Emergency Response",
+      title: "Coping in High-Stress Moments",
       description:
-        "Build confidence in high-pressure emergency medical situations",
-      color: "from-[#f9f081] to-[#c060a5]",
-      icon: "🚨",
+        "Adaptive, moment-sized experiences that guide children through grounding, breathing, and focus during episodes of acute fear, pain, or anxiety.",
+      bgClass: "bg-[#7a4ac7]",
+      icon: "",
     },
   ];
 
@@ -49,10 +49,11 @@ export function ProductSection() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-bold text-[#563293] text-5xl">
-            Our Training Modules
+            Our Experiences
           </h2>
-          <p className="mx-auto max-w-2xl text-gray-600 text-xl">
-            Comprehensive VR solutions for every aspect of medical education
+          <p className="mx-auto max-w-2xl text-gray-600 text-xl text-justify">
+            Immersive VR journeys designed to help children navigate medical
+            care with more calm, confidence, and emotional safety.
           </p>
         </div>
 
@@ -63,11 +64,13 @@ export function ProductSection() {
               className="group hover:shadow-2xl rounded-2xl overflow-hidden transition"
             >
               <div
-                className={`bg-gradient-to-br ${product.color} p-8 h-full rounded-2xl text-white`}
+                className={`${product.bgClass} p-8 h-full rounded-2xl text-white`}
               >
                 <div className="mb-4 text-5xl">{product.icon}</div>
                 <h3 className="mb-3 font-bold text-2xl">{product.title}</h3>
-                <p className="text-white/90">{product.description}</p>
+                <p className="text-white/90">
+                  {product.description}
+                </p>
               </div>
             </div>
           ))}
