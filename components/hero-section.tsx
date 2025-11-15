@@ -1,3 +1,5 @@
+"use client";
+
 export function HeroSection() {
   return (
     <section
@@ -12,12 +14,12 @@ export function HeroSection() {
         loop
         playsInline
         preload="auto"
-        onLoadedMetadata={(e) => e.currentTarget.play()} 
-        poster="wujood.jpg"   // relative path for GitHub Pages
+        onLoadedMetadata={(e) => e.currentTarget.play()}
+        poster="wujood.jpg" // relative path for GitHub Pages
       >
-        <source 
-          src="VideoWujood.mp4"   // relative path for GitHub Pages
-          type="video/mp4" 
+        <source
+          src="VideoWujood.mp4" // relative path for GitHub Pages
+          type="video/mp4"
         />
       </video>
 
@@ -46,17 +48,17 @@ export function HeroSection() {
 
           {/* Stats */}
           <div className="gap-4 grid grid-cols-3 mt-12 max-w-md">
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+            <div className="flex flex-col justify-center items-center gap-2 bg-white/10 backdrop-blur p-4 rounded-lg min-h-[150px] text-center">
               <p className="font-bold text-[#f9f081] text-3xl">3</p>
               <p className="text-white text-xl">Oncology centers</p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+            <div className="flex flex-col justify-center items-center gap-2 bg-white/10 backdrop-blur p-4 rounded-lg min-h-[150px] text-center">
               <p className="font-bold text-[#4eb2d0] text-2xl">Co-Developed</p>
               <p className="text-white text-lg">With Survivors</p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur p-4 rounded-lg text-center flex flex-col items-center justify-center gap-2 min-h-[150px]">
+            <div className="flex flex-col justify-center items-center gap-2 bg-white/10 backdrop-blur p-4 rounded-lg min-h-[150px] text-center">
               <p className="font-bold text-[#c060a5] text-3xl">Pilot Phase</p>
               <p className="text-white text-sm">Launching in 2026</p>
             </div>
